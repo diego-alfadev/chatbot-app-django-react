@@ -1,0 +1,74 @@
+El propósito de esta prueba es evaluar tus habilidades como Full Stack Developer. Sabemos que puede ser
+complicado desarrollar una aplicación bajo presión, por lo que la rapidez no es un factor clave en nuestra
+evaluación. Nos enfocamos principalmente en tu capacidad para diseñar, implementar, documentar un
+sistema funcional y escalable, así como en las justificaciones detrás de tus decisiones. Según tu
+experiencia y el tiempo disponible, puedes optar por enfocarte únicamente en el backend, únicamente en el
+frontend o construir la aplicación completa (backend y frontend). Si tienes alguna pregunta, no dudes en
+contactarnos en hello@clintell.io. ¡Mucha suerte!
+
+
+Prueba técnica: Aplicación de chatbot (Duración estimada: 4 - 6 horas)
+
+La aplicación que diseñaras deberá estar compuesta por:
+• Un backend en Django para gestionar la autenticación y la lógica del chatbot.
+• Un frontend en React para la interacción con el usuario.
+• Una base de datos PostgreSQL para almacenar información de usuarios e historial de chat.
+• Un entorno contenedorizado usando Docker y Docker Compose para su despliegue local.
+
+
+Características básicas:
+
+Se deberá de poder realizar las siguientes funcionalidades dentro de la aplicación:
+1. Autenticación de Usuarios:
+• Los usuarios deben poder registrarse e iniciar sesión.
+• Solo los usuarios autenticados pueden interactuar con el chatbot.
+2. Funcionalidad de Chat:
+• Los usuarios pueden enviar preguntas al chatbot.
+• El chatbot responderá con lógica placeholder (por ejemplo: "¡Hola! Estoy aquí para ayudarte.”).
+
+
+Enfoque:
+
+Puedes elegir uno de los siguiente enfoques durante la prueba:
+
+
+Enfoque en Backend:
+
+• Desarrollar un backend en Django con endpoints RESTful para la autenticación, envío de mensajes al
+chatbot y recuperación del historial de chat.
+• Configurar una base de datos PostgreSQL para el almacenamiento persistente.
+• Incluir configuración de Docker para el backend y la base de datos.
+
+
+Enfoque en Frontend:
+
+• Desarrollar una interfaz de usuario en React para registro, inicio de sesión y chat.
+• Integrar la interfaz con APIs simuladas (o reales si están disponibles).
+• Incluir configuración de Docker para el frontend.
+
+
+Enfoque Full Stack:
+
+• Construir tanto el backend como el frontend.
+
+Prueba técnica: Full Stack Developer
+
+• Integrar ambos en una aplicación completa contenedorizada con Docker Compose.
+
+
+Entregables:
+
+Deberás entregar un repositorio en GitHub que incluya:
+• Código del backend, frontend o ambos, según tu enfoque.
+• Configuración de Docker (Dockerfile y docker-compose.yml si aplica).
+• Un archivo README.md con instrucciones de configuración y explicación de tus decisiones
+arquitectónicas y pasos a seguir.
+La aplicación deberá poder ejecutarse de forma local si se utiliza Docker, así como presentar un plan
+detallado que describa las tareas aún pendientes por realizar.
+
+
+Conclusión:
+
+Nos enfocaremos en evaluar la funcionalidad y la seguridad del backend, la usabilidad del frontend, la
+cohesión entre ambas capas, así como la claridad, escalabilidad y justificación de la arquitectura que
+implementes. Para cualquier duda, contáctanos en hello@clintell.io ¡Mucha suerte!
