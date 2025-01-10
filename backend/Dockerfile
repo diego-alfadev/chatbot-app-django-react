@@ -1,5 +1,5 @@
-# Using python 3.24.0a3-slim-bookworm as base image to have access to the latest python bugfixes and features
-FROM python:3.14.0a3-slim-bookworm
+# Using python 3.13-slim-bookworm as base image to have access to the latest python bugfixes and features while keeping the image size small
+FROM python:3.13-slim-bookworm
 
 # ensurre that python output (stderr, stdout) is sent straight to terminal without being buffered
 ENV PYTHONUNBUFFERED 1
