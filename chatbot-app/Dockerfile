@@ -1,4 +1,4 @@
-FROM node:23-alpine3.20
+FROM node:23.6
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -9,15 +9,13 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Run echo to test the container
-RUN echo "Hello from Dockerfile"
-
-# Copy the rest of your application files
 COPY . .
 
-# # Expose the port your app runs on
-# EXPOSE 3000
+# Set the default value for ENV_FILE if not provided
+ENV ENV_FILE=.env.local
+
 
 # Define the command to run your app
-CMD ["npm", "start"]
+# set env file to the value of ENV_FILE environment variable or use local.env as default
+CMD ["npm", "start", "-- --env-file $ENV_FILE"]
 # CMD ["tail", "-f", "/dev/null"]
