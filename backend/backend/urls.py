@@ -16,14 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from chat.routes import login, register, hello_world, get_user_chat_history, user_message, start_chat
+from chat import routes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path('api/chat/login', login),
-    re_path('api/chat/register', register),
-    re_path('api/chat/hello', hello_world),
-    re_path('api/chat/history', get_user_chat_history),
-    re_path('api/chat/message', user_message),
-    re_path('api/chat/start', start_chat),
+    re_path('api/chat/login', routes.login),
+    re_path('api/chat/register', routes.register),
+    re_path('api/chat/history', routes.get_user_chat_history),
+    re_path('api/chat/start', routes.start_chat),
+    path('api/chat/<int:chat_id>', routes.get_chat),
+    path('api/chat/<int:chat_id>/message', routes.chat_message)
 ]
